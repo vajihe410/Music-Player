@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>music player</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./image/logo.png" />
+  </head>
+  <body>
+    <div class="outer-container">
+      <audio src="./audio/Maher-Zain---For-the-Rest-of-My-Life.mp3" id="track"></audio>
+    </div>
+    <div class="player-container">
+      <img src="./image/Zain.jpg" alt="siger" id="banner" />
+      <div class="center"></div>
+      <div class="box">
+        <div class="track-info">
+          <div id="track-artist">For the rest of my life</div>
+          <div id="track-title">Maher Zain</div>
+        </div>
+        <div class="buttons">
+          <svg id="prev-track" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m16 7-7 5 7 5zm-7 5V7H7v10h2z"></path></svg>
+          <svg id="play"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 6v12l10-6z"></path></svg>
+          <svg id="pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8 7h3v10H8zm5 0h3v10h-3z"></path></svg>
+          <svg id="next-track"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 7v10l7-5zm9 10V7h-2v10z"></path></svg>
+        </div>
+        <div class="progress-bar">
+          <input type="range" id="progressBar" min="0" max="" value="0" />
+        </div>
+        <div class="track-time">
+          <div id="currentTime"></div>
+          <div id="durationTime"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
