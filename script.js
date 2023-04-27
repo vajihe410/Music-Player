@@ -29,13 +29,13 @@ function pausePlay() {
     play.style.display = "none";
     pause.style.display = "block";
     track.play();
-    thumbnail.style.AnimationPlayState="runing"; 
+    banner.style.AnimationPlayState="runing"; 
     playing = false;
     
   } else {
     pause.style.display = "none";
     play.style.display = "block";
-    thumbnail.style.AnimationPlayState="paused";
+    banner.style.AnimationPlayState="paused";
     track.pause();
     playing = true;
     
